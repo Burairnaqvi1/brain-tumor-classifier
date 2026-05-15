@@ -144,14 +144,6 @@ joblib==1.4.2
 
 ---
 
-## 👥 Authors
-
-| Name | Enrollment |
-|------|-----------|
-| Syed Muhammad Burair Abbas | 01-134232-176 |
-| Muhammad Reyan Riaz | 01-134232-205 |
-
-**Bahria University, Islamabad — Department of Computer Science**
 
 ---
 
