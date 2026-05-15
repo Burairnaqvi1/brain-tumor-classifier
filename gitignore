@@ -1,0 +1,43 @@
+# ── Dataset (too large for GitHub) ────────────────────────────
+data/raw_download/
+data/features/
+
+# ── Trained models & artifacts ────────────────────────────────
+models/
+
+# ── Results (generated on run) ────────────────────────────────
+results/
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ───────────────────────────────────────
+venv/
+env/
+.env
+.venv
+
+# ── Jupyter ────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+pipeline.log
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp

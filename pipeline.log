@@ -1,0 +1,86 @@
+14:29:13  INFO      Loading and preprocessing training images...
+14:29:51  INFO      Loading and preprocessing test images...
+14:30:02  INFO      Extracting features from training set...
+14:30:18  INFO        Extracted features: 500/5600
+14:30:35  INFO        Extracted features: 1000/5600
+14:30:51  INFO        Extracted features: 1500/5600
+14:31:08  INFO        Extracted features: 2000/5600
+14:31:24  INFO        Extracted features: 2500/5600
+14:31:40  INFO        Extracted features: 3000/5600
+14:31:56  INFO        Extracted features: 3500/5600
+14:32:12  INFO        Extracted features: 4000/5600
+14:32:28  INFO        Extracted features: 4500/5600
+14:32:43  INFO        Extracted features: 5000/5600
+14:32:59  INFO        Extracted features: 5500/5600
+14:33:02  INFO        Extracted features: 5600/5600
+14:33:10  INFO      Saved train features → C:\Users\admin\brain_tumor_classifier\data\features\train_features.csv  (5600 samples, 1779 features)
+14:33:10  INFO      Extracting features from test set...
+14:33:26  INFO        Extracted features: 500/1600
+14:33:45  INFO        Extracted features: 1000/1600
+14:34:02  INFO        Extracted features: 1500/1600
+14:34:05  INFO        Extracted features: 1600/1600
+14:34:07  INFO      Saved test features → C:\Users\admin\brain_tumor_classifier\data\features\test_features.csv  (1600 samples, 1779 features)
+14:34:08  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\plots\sample_images.png
+14:34:08  INFO      Sample images plot saved.
+14:34:08  INFO      Fitting StandardScaler on training set...
+14:34:09  INFO      Scaler saved → C:\Users\admin\brain_tumor_classifier\models\scaler.pkl
+14:34:09  INFO      Applying PCA...
+14:34:26  INFO      PCA: 1779 → 377 components (95.0% variance retained)
+14:34:26  INFO      PCA saved → C:\Users\admin\brain_tumor_classifier\models\pca.pkl
+14:34:26  INFO      Applying SMOTE on training set only...
+14:34:27  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\plots\class_distribution.png
+14:34:27  INFO        Running GridSearchCV for SVM...
+14:39:51  INFO        SVM best params: {'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}  |  CV score: 0.9443
+14:39:51  INFO        Running 5-fold StratifiedKFold CV...
+14:40:22  INFO        CV accuracy    : 0.9493 ± 0.0043
+14:40:22  INFO        CV precision   : 0.9499 ± 0.0039
+14:40:22  INFO        CV recall      : 0.9493 ± 0.0043
+14:40:22  INFO        CV f1          : 0.9493 ± 0.0043
+14:40:38  INFO        Saved → C:\Users\admin\brain_tumor_classifier\models\svm.pkl  (371.0s)
+14:40:38  INFO        Running 5-fold StratifiedKFold CV...
+14:41:02  INFO        CV accuracy    : 0.8861 ± 0.0101
+14:41:02  INFO        CV precision   : 0.8862 ± 0.0107
+14:41:02  INFO        CV recall      : 0.8861 ± 0.0101
+14:41:02  INFO        CV f1          : 0.8849 ± 0.0106
+14:41:08  INFO        Saved → C:\Users\admin\brain_tumor_classifier\models\random_forest.pkl  (30.0s)
+14:41:08  INFO        Running 5-fold StratifiedKFold CV...
+14:41:08  INFO        CV accuracy    : 0.9037 ± 0.0062
+14:41:08  INFO        CV precision   : 0.9045 ± 0.0064
+14:41:08  INFO        CV recall      : 0.9037 ± 0.0062
+14:41:08  INFO        CV f1          : 0.9023 ± 0.0060
+14:41:08  INFO        Saved → C:\Users\admin\brain_tumor_classifier\models\knn.pkl  (0.5s)
+14:41:08  INFO        Running 5-fold StratifiedKFold CV...
+14:41:09  INFO        CV accuracy    : 0.7414 ± 0.0100
+14:41:09  INFO        CV precision   : 0.7565 ± 0.0075
+14:41:09  INFO        CV recall      : 0.7414 ± 0.0100
+14:41:09  INFO        CV f1          : 0.7468 ± 0.0086
+14:41:09  INFO        Saved → C:\Users\admin\brain_tumor_classifier\models\naive_bayes.pkl  (0.2s)
+14:41:09  INFO        Running GridSearchCV for XGBoost...
+14:46:07  INFO        XGBoost best params: {'learning_rate': 0.1, 'max_depth': 6, 'n_estimators': 200}  |  CV score: 0.8945
+14:46:07  INFO        Running 5-fold StratifiedKFold CV...
+14:47:39  INFO        CV accuracy    : 0.9054 ± 0.0093
+14:47:39  INFO        CV precision   : 0.9059 ± 0.0092
+14:47:39  INFO        CV recall      : 0.9054 ± 0.0093
+14:47:39  INFO        CV f1          : 0.9047 ± 0.0093
+14:48:11  INFO        Saved → C:\Users\admin\brain_tumor_classifier\models\xgboost.pkl  (422.1s)
+14:48:15  INFO      Metrics table saved → C:\Users\admin\brain_tumor_classifier\results\metrics_table.csv
+14:48:16  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\confusion_matrices\cm_svm.png
+14:48:16  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\confusion_matrices\cm_randomforest.png
+14:48:16  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\confusion_matrices\cm_knn.png
+14:48:17  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\confusion_matrices\cm_naivebayes.png
+14:48:17  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\confusion_matrices\cm_xgboost.png
+14:48:17  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\roc_curves\roc_svm.png
+14:48:18  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\roc_curves\roc_randomforest.png
+14:48:18  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\roc_curves\roc_knn.png
+14:48:18  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\roc_curves\roc_naivebayes.png
+14:48:18  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\roc_curves\roc_xgboost.png
+14:48:19  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\plots\roc_all_models.png
+14:48:19  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\plots\metrics_comparison.png
+14:48:19  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\plots\cv_accuracy.png
+14:48:19  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\plots\training_time.png
+14:48:19  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\plots\feature_importance.png
+14:48:20  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\plots\error_analysis_svm.png
+14:48:20  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\plots\error_analysis_randomforest.png
+14:48:21  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\plots\error_analysis_knn.png
+14:48:21  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\plots\error_analysis_naivebayes.png
+14:48:22  INFO      Saved plot → C:\Users\admin\brain_tumor_classifier\results\plots\error_analysis_xgboost.png
